@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МамаПлюс — студия для мам и малышей</title>
+  <meta name="description" content="Йога, пилатес, занятия для мам и малышей, беременных и женщин в Нахабино.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home">Мама<span>Плюс</span></a>
+    <nav>
+      <a href="#about">О студии</a>
+      <a href="#classes">Направления</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#booking">Запись</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">ПРОСТРАНСТВО ЗАБОТЫ О СЕБЕ</p>
+        <h1>Мама счастлива — малыш счастлив</h1>
+        <p>Место, где можно восстановить силы, почувствовать себя красивой и энергичной, провести время с малышом и найти единомышленниц.</p>
+        <a class="button" href="#booking">Записаться на занятие</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <p class="eyebrow">ДОБРО ПОЖАЛОВАТЬ</p>
+      <h2>Студия «МамаПлюс»</h2>
+      <p>Уютное пространство в Нахабино для женщин, будущих мам и мам с малышами. Здесь движение, развитие и забота о себе становятся частью счастливой жизни.</p>
+    </section>
+
+    <section class="section" id="classes">
+      <p class="eyebrow">НАШИ ЗАНЯТИЯ</p>
+      <h2>Выбирайте своё направление</h2>
+      <div class="cards">
+        <article class="card"><h3>Йога мама и малыш</h3><p>Мягкая практика для мамы, контакт и спокойные активности для малыша.</p></article>
+        <article class="card"><h3>Пилатес</h3><p>Укрепление мышц, осанка, гибкость и бережная работа с телом.</p></article>
+        <article class="card"><h3>Раннее развитие</h3><p>Игры, сенсорика, музыка и упражнения по возрасту ребёнка.</p></article>
+        <article class="card"><h3>Для беременных</h3><p>Мягкое движение, дыхание и подготовка тела к родам.</p></article>
+        <article class="card"><h3>Женская йога и пилатес</h3><p>Время для себя, восстановления и хорошего самочувствия.</p></article>
+        <article class="card"><h3>Танцы для женщин</h3><p>Музыка, движение, настроение и удовольствие от себя.</p></article>
+      </div>
+    </section>
+
+    <section class="section schedule" id="schedule">
+      <p class="eyebrow">ПЛАНИРУЙТЕ СВОЁ ВРЕМЯ</p>
+      <h2>Расписание занятий</h2>
+      <p>Занятия проходят с понедельника по субботу. Начало утренних занятий — с 10:00, вечерние — до 21:30.</p>
+      <p>Актуальное расписание и свободные места уточняйте при записи.</p>
+    </section>
+
+    <section class="section booking" id="booking">
+      <p class="eyebrow">МЫ ЖДЁМ ВАС</p>
+      <h2>Записаться на занятие</h2>
+      <p>Оставьте заявку — мы свяжемся с вами и подтвердим запись.</p>
+      <form id="bookingForm">
+        <input name="name" placeholder="Ваше имя" required>
+        <input name="phone" type="tel" placeholder="Номер телефона" required>
+        <select name="program" required>
+          <option value="">Выберите направление</option>
+          <option>Йога мама и малыш</option>
+          <option>Пилатес мама и малыш</option>
+          <option>Раннее развитие</option>
+          <option>Занятия для беременных</option>
+          <option>Женская йога</option>
+          <option>Женский пилатес</option>
+          <option>Танцы для женщин</option>
+        </select>
+        <input name="preferredTime" placeholder="Удобное время">
+        <input name="childAge" placeholder="Возраст малыша (если актуально)">
+        <textarea name="comment" placeholder="Ваш комментарий"></textarea>
+        <label class="consent"><input type="checkbox" name="consent" required> Согласна на обработку персональных данных</label>
+        <button class="button" type="submit">Отправить заявку</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">Мама<span>Плюс</span></a>
+    <p>Нахабино, Московская область</p>
+    <p>Пространство заботы о маме и малыше</p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
