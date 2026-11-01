@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: mamaplus
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
